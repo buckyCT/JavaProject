@@ -3,7 +3,7 @@ package groupWork;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Class1 {
+public class Class0001 {
 
 	public static void main(String[] args) {
 		

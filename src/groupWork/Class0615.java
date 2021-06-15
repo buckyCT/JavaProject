@@ -1,11 +1,20 @@
 package groupWork;
 
-public class Class4 {
+public class Class0615 {
 
 	public static void main(String[] args) {
 		
 		String x = "fez day ozzy65 zeynep";
 		countYZ(x);
+
+		int[] a = {1};
+		int[] b = {1,2,2,3};
+		int[] c = {3,4,4,3};
+		int[] d = {1,2,3,2,4};
+		System.out.println(scoreIncreasing(a));
+		System.out.println(scoreIncreasing(b));
+		System.out.println(scoreIncreasing(c));
+		System.out.println(scoreIncreasing(d));
 
 	}
 	
@@ -32,4 +41,20 @@ public class Class4 {
 		System.out.println(count);
 	}
 
+	public static boolean scoreIncreasing(int arr[]){
+
+		boolean result = true;
+
+		if(arr.length>1){
+			for(int i=0; i<arr.length-1; i++){
+
+				if(arr[i]<=arr[i+1]){ continue; }
+				else{ result=false; }
+			}
+		}else{
+			result=false;
+			System.out.print("invalid array ");
+		}
+		return result;
+	}
 }

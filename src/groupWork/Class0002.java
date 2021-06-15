@@ -1,6 +1,6 @@
 package groupWork;
 
-public class Class2 {
+public class Class0002 {
 
 	public static void main(String[] args) {
 		
